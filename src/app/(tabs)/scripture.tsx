@@ -6,17 +6,11 @@ import { Body, Button, Chip, Row, Screen, SectionTitle } from '../../components/
 import { VerseCard } from '../../components/VerseCard';
 import { resourceById } from '../../data/resources';
 import { topics } from '../../data/topics';
-import {
-  bibleGatewayUrl,
-  DEFAULT_TRANSLATION,
-  enduringWordUrl,
-  openUrl,
-  parseReference,
-  resourceSearchUrl,
-  translations,
-} from '../../lib/links';
-import type { Translation } from '../../lib/links';
+import { translationById, translations } from '../../data/bible/translations';
+import { NIV } from '../../data/bible/niv';
+import { bibleGatewayUrl, enduringWordUrl, openUrl, parseReference, resourceSearchUrl } from '../../lib/links';
 import { radius, spacing, useTheme } from '../../lib/theme';
+import { useTranslation } from '../../lib/translation';
 
 const keyPassages = [
   { ref: '1 Peter 3:15', why: 'The call to give a reason for your hope' },
@@ -31,14 +25,14 @@ const keyPassages = [
 
 const memoryVerses = Array.from(
   new Map(
-    topics.flatMap((t) => t.verses.filter((v) => v.text && v.text.length < 220)).map((v) => [v.ref, v]),
+    topics.flatMap((t) => t.verses.filter((v) => v.quote && (NIV[v.ref]?.length ?? 0) < 220)).map((v) => [v.ref, v]),
   ).values(),
 );
 
 export default function ScriptureScreen() {
   const t = useTheme();
   const [ref, setRef] = useState('');
-  const [version, setVersion] = useState<Translation>(DEFAULT_TRANSLATION);
+  const { translation: version, setTranslation: setVersion } = useTranslation();
   const valid = parseReference(ref) !== null;
 
   return (
@@ -61,9 +55,11 @@ export default function ScriptureScreen() {
       </View>
       <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: spacing.sm }}>
         {translations.map((v) => (
-          <Chip key={v} label={v} selected={version === v} onPress={() => setVersion(v)} />
+          <Chip key={v.id} label={v.id} selected={version === v.id} onPress={() => setVersion(v.id)} />
         ))}
       </ScrollView>
+
+      <Body muted>{translationById[version]?.name}</Body>
 
       {valid ? (
         <View style={{ gap: spacing.sm }}>

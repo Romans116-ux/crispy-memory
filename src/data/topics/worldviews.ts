@@ -15,7 +15,7 @@ export const worldviewTopics: Topic[] = [
     points: [
       {
         heading: 'There is one God',
-        body: 'Scripture is emphatically monotheistic: "Hear, Israel: Yahweh is our God. Yahweh is one" (Deuteronomy 6:4). Jesus affirmed this (Mark 12:29).',
+        body: 'Scripture is emphatically monotheistic: "Hear, O Israel: The LORD our God, the LORD is one" (Deuteronomy 6:4). Jesus affirmed this (Mark 12:29).',
       },
       {
         heading: 'Three persons are called God',
@@ -47,11 +47,8 @@ export const worldviewTopics: Topic[] = [
       },
     ],
     verses: [
-      { ref: 'Deuteronomy 6:4', text: 'Hear, Israel: Yahweh is our God. Yahweh is one.' },
-      {
-        ref: 'Matthew 28:19',
-        text: 'Go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,',
-      },
+      { ref: 'Deuteronomy 6:4', quote: true },
+      { ref: 'Matthew 28:19', quote: true },
       { ref: 'Matthew 3:16-17' },
       { ref: '2 Corinthians 13:14' },
       { ref: 'Acts 5:3-4' },
@@ -78,7 +75,7 @@ export const worldviewTopics: Topic[] = [
       },
       {
         heading: 'Jesus is the Creator',
-        body: 'John 1:3 says "all things were made through him," and Colossians 1:16 says all things were created by him. Isaiah 44:24 says Jehovah made all things alone. Only the Creator can be the agent of all creation. The NWT inserts the word "other" into Colossians 1 ("all other things") to avoid this.',
+        body: 'John 1:3 says "through him all things were made," and Colossians 1:16 says all things were created by him. Isaiah 44:24 says Jehovah made all things alone. Only the Creator can be the agent of all creation. The NWT inserts the word "other" into Colossians 1 ("all other things") to avoid this.',
       },
       {
         heading: 'Jesus receives worship',
@@ -97,10 +94,7 @@ export const worldviewTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 1:1-3',
-        text: 'In the beginning was the Word, and the Word was with God, and the Word was God. The same was in the beginning with God. All things were made through him. Without him, nothing was made that has been made.',
-      },
+      { ref: 'John 1:1-3', quote: true },
       { ref: 'Colossians 1:15-17' },
       { ref: 'Hebrews 1:6-8' },
       { ref: 'Isaiah 44:24' },
@@ -153,10 +147,7 @@ export const worldviewTopics: Topic[] = [
     ],
     verses: [
       { ref: 'Mark 8:31' },
-      {
-        ref: 'Isaiah 53:5',
-        text: 'But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed.',
-      },
+      { ref: 'Isaiah 53:5', quote: true },
       { ref: '1 Corinthians 15:3-4' },
       { ref: 'Galatians 1:8' },
     ],
@@ -205,17 +196,9 @@ export const worldviewTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 18:37-38',
-      },
-      {
-        ref: 'John 8:32',
-        text: 'You will know the truth, and the truth will make you free.',
-      },
-      {
-        ref: 'John 14:6',
-        text: 'Jesus said to him, "I am the way, the truth, and the life. No one comes to the Father, except through me."',
-      },
+      { ref: 'John 18:37-38' },
+      { ref: 'John 8:32', quote: true },
+      { ref: 'John 14:6', quote: true },
     ],
     searchTerms: 'moral relativism absolute truth',
     keyPassage: 'John 18',
@@ -263,14 +246,8 @@ export const worldviewTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Psalm 14:1',
-        text: 'The fool has said in his heart, "There is no God."',
-      },
-      {
-        ref: 'Jeremiah 29:13',
-        text: 'You shall seek me, and find me, when you search for me with all your heart.',
-      },
+      { ref: 'Psalm 14:1', quote: true },
+      { ref: 'Jeremiah 29:13', quote: true },
       { ref: 'Acts 17:22-31' },
     ],
     searchTerms: 'answering atheist arguments',

@@ -16,8 +16,11 @@ export interface Category {
 export interface Verse {
   /** Human-readable reference, e.g. "1 Corinthians 15:3-8". */
   ref: string;
-  /** World English Bible (public domain). Omitted when only a reference is given. */
-  text?: string;
+  /**
+   * Show the verse text in the app (from the bundled translations in src/data/bible).
+   * When false, only a link to read the passage on Bible Gateway is shown.
+   */
+  quote?: boolean;
 }
 
 export interface Argument {

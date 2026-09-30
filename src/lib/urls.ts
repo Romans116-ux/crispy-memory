@@ -1,10 +1,6 @@
 // Pure URL builders, kept free of native imports so they can run in Node scripts.
+import { DEFAULT_TRANSLATION } from '../data/bible/translations';
 import type { Resource } from '../data/resources';
-
-export const DEFAULT_TRANSLATION = 'ESV';
-
-export const translations = ['ESV', 'NIV', 'NKJV', 'NASB', 'CSB', 'KJV', 'NLT', 'WEB'] as const;
-export type Translation = (typeof translations)[number];
 
 export function bibleGatewayUrl(reference: string, version: string = DEFAULT_TRANSLATION): string {
   const search = encodeURIComponent(reference.trim()).replace(/%20/g, '+');
@@ -46,4 +42,21 @@ export function resourceSearchUrl(resource: Resource, query: string): string {
     return `https://www.biblegateway.com/quicksearch/?quicksearch=${encodeURIComponent(query)}`;
   }
   return siteSearchUrl(resource.domain, query);
+}
+
+/**
+ * Expands a single-chapter reference like "Romans 2:14-15" into its verse numbers.
+ * Throws for references without verses or spanning chapters, which are never quoted in full.
+ */
+export function expandReference(reference: string): { book: string; chapter: number; verses: number[] } {
+  const match = reference.trim().match(/^((?:[1-3]\s*)?[A-Za-z][A-Za-z ]*?)\s+(\d+):(\d+)(?:-(\d+))?$/);
+  if (!match) throw new Error(`Cannot quote "${reference}": expected "Book chapter:verse[-verse]"`);
+  const start = Number(match[3]);
+  const end = match[4] ? Number(match[4]) : start;
+  if (end < start) throw new Error(`Bad verse range in "${reference}"`);
+  return {
+    book: match[1].replace(/\s+/g, ' ').trim(),
+    chapter: Number(match[2]),
+    verses: Array.from({ length: end - start + 1 }, (_, i) => start + i),
+  };
 }

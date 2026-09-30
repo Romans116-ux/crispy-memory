@@ -57,7 +57,7 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 > • A short answer you can give in conversation
 > • Key points explained clearly
 > • Common objections with thoughtful responses
-> • Scripture to read in context in any translation
+> • Scripture quoted in the NIV, KJV or WEB, and a link to read it in context in your preferred translation
 > • Links to go deeper with trusted resources
 >
 > GO DEEPER WITH TRUSTED RESOURCES
@@ -77,10 +77,11 @@ App Store Connect requires 6.9" iPhone screenshots (1320 × 2868 or 1290 × 2796
 
 ## 5. Review notes (paste into "Notes for reviewer")
 
-> Reason for Hope is a reference app of original Christian apologetics content (26 topics, with key points, objections and responses). Scripture quotations are from the public-domain World English Bible. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
+> Reason for Hope is a reference app of original Christian apologetics content (26 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
 
 ## Content guidelines
 
 - All topic text in `src/data/topics/` is original writing. When adding content, summarize ideas in your own words and link to the source site rather than copying articles — the linked ministries hold copyright to their material.
-- Quoted verses must be from a public-domain translation (the app uses the WEB). Other translations are shown by linking to Bible Gateway.
+- **NIV:** Biblica allows quoting up to 500 NIV verses without written permission, as long as the copyright notice is shown (it is, in About). The app quotes about 45 verses and `npm run validate` enforces a 250-verse budget. If you charge for the app or add in-app purchases, confirm with Biblica (biblica.com/permissions) before release.
+- KJV and WEB text is generated from public-domain data by `npm run build:scripture`. Other translations (ESV, NKJV, NASB, CSB, NLT, NET, AMP) are copyrighted and are only linked on Bible Gateway, not bundled.
 - Run `npm run validate` after editing content.

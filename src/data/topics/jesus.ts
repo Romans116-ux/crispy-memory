@@ -43,14 +43,9 @@ export const jesusTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Luke 1:1-4',
-      },
+      { ref: 'Luke 1:1-4' },
       { ref: 'Galatians 1:18-19' },
-      {
-        ref: '2 Peter 1:16',
-        text: 'For we didn\'t follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty.',
-      },
+      { ref: '2 Peter 1:16', quote: true },
     ],
     searchTerms: 'historical evidence Jesus existed Tacitus Josephus',
     keyPassage: 'Luke 1',
@@ -111,14 +106,8 @@ export const jesusTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: '1 Corinthians 15:3-8',
-        text: 'For I delivered to you first of all that which I also received: that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures, and that he appeared to Cephas, then to the twelve. Then he appeared to over five hundred brothers at once, most of whom remain until now, but some have also fallen asleep. Then he appeared to James, then to all the apostles, and last of all, as to the child born at the wrong time, he appeared to me also.',
-      },
-      {
-        ref: '1 Corinthians 15:14',
-        text: 'If Christ has not been raised, then our preaching is in vain, and your faith also is in vain.',
-      },
+      { ref: '1 Corinthians 15:3-8', quote: true },
+      { ref: '1 Corinthians 15:14', quote: true },
       { ref: 'Acts 1:3' },
       { ref: 'Matthew 28:11-15' },
     ],
@@ -148,11 +137,11 @@ export const jesusTopics: Topic[] = [
       },
       {
         heading: 'He used God\'s name',
-        body: 'In John 8:58 Jesus said, "Before Abraham came into existence, I AM," echoing God\'s self-revelation in Exodus 3:14. His listeners understood the claim and picked up stones to kill him for blasphemy.',
+        body: 'In John 8:58 Jesus said, "before Abraham was born, I am!" echoing God\'s self-revelation in Exodus 3:14. His listeners understood the claim and picked up stones to kill him for blasphemy.',
       },
       {
         heading: 'He claimed the divine throne',
-        body: 'At his trial Jesus identified himself as the Son of Man of Daniel 7 who would sit at the right hand of Power and come with the clouds (Mark 14:61-64). The high priest tore his clothes and called it blasphemy.',
+        body: 'At his trial Jesus identified himself as the Son of Man of Daniel 7 who would sit at the right hand of the Mighty One and come with the clouds (Mark 14:61-64). The high priest tore his clothes and called it blasphemy.',
       },
       {
         heading: 'He accepted worship',
@@ -160,7 +149,7 @@ export const jesusTopics: Topic[] = [
       },
       {
         heading: 'The earliest church worshiped him',
-        body: 'Within twenty years, Paul could quote a hymn describing Christ as existing "in the form of God" (Philippians 2:6-11) and adapt the Jewish Shema to include Jesus (1 Corinthians 8:6).',
+        body: 'Within twenty years, Paul could quote a hymn describing Christ as "being in very nature God" (Philippians 2:6-11) and adapt the Jewish Shema to include Jesus (1 Corinthians 8:6).',
       },
     ],
     objections: [
@@ -176,14 +165,8 @@ export const jesusTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 1:1',
-        text: 'In the beginning was the Word, and the Word was with God, and the Word was God.',
-      },
-      {
-        ref: 'John 8:58',
-        text: 'Jesus said to them, "Most certainly, I tell you, before Abraham came into existence, I AM."',
-      },
+      { ref: 'John 1:1', quote: true },
+      { ref: 'John 8:58', quote: true },
       { ref: 'John 20:28' },
       { ref: 'Philippians 2:5-11' },
       { ref: 'Titus 2:13' },
@@ -230,10 +213,7 @@ export const jesusTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: '2 Peter 1:16',
-        text: 'For we didn\'t follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty.',
-      },
+      { ref: '2 Peter 1:16', quote: true },
       { ref: 'Luke 3:1-2' },
     ],
     searchTerms: 'Jesus pagan myths Horus Mithras copycat',

@@ -21,18 +21,22 @@
     "react-native-web": "~0.21.0"
   },
   "devDependencies": {
+    "@types/node": "^22.20.4",
     "@types/react": "~19.2.2",
+    "kjv": "^1.0.0",
     "tsx": "^4.23.15",
-    "typescript": "~6.0.3"
+    "typescript": "~6.0.3",
+    "world-english-bible": "^1.0.1"
   },
   "scripts": {
     "start": "expo start",
     "ios": "expo start --ios",
     "android": "expo start --android",
     "web": "expo start --web",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p scripts",
     "validate": "tsx scripts/validate-content.ts",
-    "export:web": "expo export --platform web"
+    "export:web": "expo export --platform web",
+    "build:scripture": "tsx scripts/build-scripture.ts"
   },
   "private": true
 }

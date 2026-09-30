@@ -47,11 +47,8 @@ export const bibleTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Isaiah 40:8',
-        text: 'The grass withers, the flower fades; but the word of our God stands forever.',
-      },
-      { ref: 'Matthew 24:35', text: 'Heaven and earth will pass away, but my words will not pass away.' },
+      { ref: 'Isaiah 40:8', quote: true },
+      { ref: 'Matthew 24:35', quote: true },
       { ref: '2 Timothy 3:16' },
     ],
     searchTerms: 'New Testament manuscripts reliability textual criticism',
@@ -106,10 +103,7 @@ export const bibleTopics: Topic[] = [
     verses: [
       { ref: '2 Peter 3:15-16' },
       { ref: 'Luke 24:44' },
-      {
-        ref: '2 Timothy 3:16',
-        text: 'Every Scripture is God-breathed and profitable for teaching, for reproof, for correction, and for instruction in righteousness,',
-      },
+      { ref: '2 Timothy 3:16', quote: true },
     ],
     searchTerms: 'canon of scripture who decided books of the Bible',
     keyPassage: '2 Peter 3',
@@ -206,10 +200,7 @@ export const bibleTopics: Topic[] = [
     verses: [
       { ref: 'Matthew 28:2-5' },
       { ref: 'Luke 24:4' },
-      {
-        ref: 'Proverbs 30:5',
-        text: 'Every word of God is flawless. He is a shield to those who take refuge in him.',
-      },
+      { ref: 'Proverbs 30:5', quote: true },
     ],
     searchTerms: 'Bible contradictions answered',
     keyPassage: 'Matthew 28',
@@ -260,10 +251,7 @@ export const bibleTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Isaiah 53:5',
-        text: 'But he was pierced for our transgressions. He was crushed for our iniquities. The punishment that brought our peace was on him; and by his wounds we are healed.',
-      },
+      { ref: 'Isaiah 53:5', quote: true },
       { ref: 'Psalm 22:16-18' },
       { ref: 'Micah 5:2' },
       { ref: 'Luke 24:25-27' },

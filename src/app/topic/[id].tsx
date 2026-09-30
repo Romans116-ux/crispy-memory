@@ -1,24 +1,27 @@
 import Ionicons from '@expo/vector-icons/Ionicons';
 import * as Haptics from 'expo-haptics';
-import { Stack, useLocalSearchParams } from 'expo-router';
+import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { Platform, Pressable, Share, StyleSheet, Text, View } from 'react-native';
 
 import { Expandable } from '../../components/Expandable';
 import { Body, Card, Heading, Row, Screen, SectionTitle } from '../../components/ui';
 import type { IconName } from '../../components/ui';
 import { VerseCard } from '../../components/VerseCard';
+import { translationById } from '../../data/bible/translations';
 import { categoryById } from '../../data/categories';
 import { resources } from '../../data/resources';
 import { topicById } from '../../data/topics';
 import { useBookmarks } from '../../lib/bookmarks';
 import { bibleGatewayUrl, enduringWordUrl, openUrl, resourceSearchUrl } from '../../lib/links';
 import { radius, serif, spacing, useTheme } from '../../lib/theme';
+import { useTranslation } from '../../lib/translation';
 
 export default function TopicScreen() {
   const t = useTheme();
   const { id } = useLocalSearchParams<{ id: string }>();
   const topic = topicById[id];
   const { isSaved, toggle } = useBookmarks();
+  const { translation } = useTranslation();
 
   if (!topic) {
     return (
@@ -100,7 +103,19 @@ export default function TopicScreen() {
         </>
       ) : null}
 
-      <SectionTitle>Scripture</SectionTitle>
+      <View style={styles.scriptureHeader}>
+        <SectionTitle>Scripture</SectionTitle>
+        <Pressable
+          onPress={() => router.push('/translation')}
+          accessibilityRole="button"
+          accessibilityLabel={`Translation: ${translationById[translation]?.name}. Change`}
+          hitSlop={8}
+          style={styles.translationPill}
+        >
+          <Text style={{ color: t.primary, fontWeight: '700', fontSize: 13 }}>{translation}</Text>
+          <Ionicons name="chevron-down" size={14} color={t.primary} />
+        </Pressable>
+      </View>
       {topic.verses.map((v) => (
         <VerseCard key={v.ref} verse={v} />
       ))}
@@ -161,4 +176,6 @@ const styles = StyleSheet.create({
   answerText: { fontSize: 17, lineHeight: 25, fontWeight: '500' },
   num: { width: 28, height: 28, borderRadius: 14, alignItems: 'center', justifyContent: 'center' },
   pointHeading: { fontSize: 17, fontWeight: '700' },
+  scriptureHeader: { flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between' },
+  translationPill: { flexDirection: 'row', alignItems: 'center', gap: 2, paddingVertical: 2 },
 });

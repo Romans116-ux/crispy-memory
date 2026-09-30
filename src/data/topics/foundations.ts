@@ -34,7 +34,7 @@ export const foundationsTopics: Topic[] = [
       {
         objection: 'Faith shouldn\'t need evidence. Isn\'t apologetics a lack of trust?',
         response:
-          'Biblical faith is trust grounded in what God has shown to be true, not a leap in the dark. Luke wrote so that his reader could "know the certainty" of what he had been taught (Luke 1:4), and John wrote so that readers "may believe" (John 20:31). Evidence and trust work together.',
+          'Biblical faith is trust grounded in what God has shown to be true, not a leap in the dark. Luke wrote so that his reader could "know the certainty of the things you have been taught" (Luke 1:4), and John wrote so that readers "may believe" (John 20:31). Evidence and trust work together.',
       },
       {
         objection: 'No one ever came to faith through an argument.',
@@ -43,14 +43,8 @@ export const foundationsTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: '1 Peter 3:15',
-        text: 'But sanctify the Lord God in your hearts. Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you, with humility and fear:',
-      },
-      {
-        ref: 'Colossians 4:5-6',
-        text: 'Walk in wisdom toward those who are outside, redeeming the time. Let your speech always be with grace, seasoned with salt, that you may know how you ought to answer each one.',
-      },
+      { ref: '1 Peter 3:15', quote: true },
+      { ref: 'Colossians 4:5-6', quote: true },
       { ref: 'Acts 17:2-3' },
       { ref: 'Jude 3' },
       { ref: '2 Corinthians 10:5' },
@@ -81,7 +75,7 @@ export const foundationsTopics: Topic[] = [
       },
       {
         heading: 'The Bible appeals to evidence',
-        body: 'Jesus offered "many proofs" of his resurrection over forty days (Acts 1:3). Peter insists the apostles did not follow "cunningly devised fables" but were eyewitnesses (2 Peter 1:16). John records signs "that you may believe" (John 20:31).',
+        body: 'Jesus offered "many proofs" of his resurrection over forty days (Acts 1:3). Peter insists the apostles did not follow "cleverly devised stories" but were eyewitnesses (2 Peter 1:16). John records signs "that you may believe" (John 20:31).',
       },
       {
         heading: 'Everyone lives by faith',
@@ -101,14 +95,8 @@ export const foundationsTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 20:30-31',
-        text: 'Therefore Jesus did many other signs in the presence of his disciples, which are not written in this book; but these are written, that you may believe that Jesus is the Christ, the Son of God, and that believing you may have life in his name.',
-      },
-      {
-        ref: '2 Peter 1:16',
-        text: 'For we didn\'t follow cunningly devised fables when we made known to you the power and coming of our Lord Jesus Christ, but we were eyewitnesses of his majesty.',
-      },
+      { ref: 'John 20:30-31', quote: true },
+      { ref: '2 Peter 1:16', quote: true },
       { ref: 'Acts 1:3' },
       { ref: 'Hebrews 11:1' },
     ],
@@ -153,10 +141,7 @@ export const foundationsTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Colossians 4:6',
-        text: 'Let your speech always be with grace, seasoned with salt, that you may know how you ought to answer each one.',
-      },
+      { ref: 'Colossians 4:6', quote: true },
       { ref: '2 Timothy 2:24-25' },
       { ref: 'James 1:19' },
     ],

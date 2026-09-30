@@ -2,10 +2,13 @@
  * Sanity checks for the bundled apologetics content. Run with `npm run validate`.
  * Fails if topics are malformed, IDs collide, or generated links can't be built.
  */
+import { NIV } from '../src/data/bible/niv';
+import { KJV, WEB } from '../src/data/bible/public-domain';
+import { DEFAULT_TRANSLATION, translationById, translations } from '../src/data/bible/translations';
 import { categories } from '../src/data/categories';
 import { resources } from '../src/data/resources';
 import { topics } from '../src/data/topics';
-import { bibleGatewayUrl, enduringWordUrl, parseReference, resourceSearchUrl } from '../src/lib/urls';
+import { bibleGatewayUrl, enduringWordUrl, expandReference, parseReference, resourceSearchUrl } from '../src/lib/urls';
 import { searchTopics } from '../src/lib/search';
 
 const errors: string[] = [];
@@ -27,6 +30,11 @@ for (const t of topics) {
   for (const v of t.verses) {
     if (!parseReference(v.ref)) fail(`${t.id}: unparseable verse reference "${v.ref}"`);
     bibleGatewayUrl(v.ref);
+    if (v.quote) {
+      for (const [name, table] of Object.entries({ NIV, KJV, WEB })) {
+        if (!table[v.ref]?.trim()) fail(`${t.id}: quoted verse ${v.ref} has no ${name} text (run npm run build:scripture for KJV/WEB)`);
+      }
+    }
   }
   if (t.keyPassage) {
     if (!parseReference(t.keyPassage)) fail(`${t.id}: unparseable key passage "${t.keyPassage}"`);
@@ -39,6 +47,20 @@ for (const t of topics) {
 for (const c of categories) {
   if (!topics.some((t) => t.category === c.id)) fail(`Category ${c.id} has no topics`);
 }
+
+// Translations: bundled flags must match the text that actually ships.
+const bundledTables: Record<string, Record<string, string>> = { NIV, KJV, WEB };
+if (!translationById[DEFAULT_TRANSLATION]?.bundled) fail('Default translation must be bundled');
+for (const tr of translations) {
+  if (tr.bundled !== tr.id in bundledTables) fail(`Translation ${tr.id}: bundled flag does not match bundled text`);
+}
+const quotedRefs = new Set(topics.flatMap((t) => t.verses.filter((v) => v.quote).map((v) => v.ref)));
+for (const ref of Object.keys(NIV)) {
+  if (!quotedRefs.has(ref)) fail(`NIV entry ${ref} is not quoted by any topic`);
+}
+// Biblica's gratis-use limit is 500 verses; stay well below it.
+const nivVerseCount = Object.keys(NIV).reduce((n, ref) => n + expandReference(ref).verses.length, 0);
+if (nivVerseCount > 250) fail(`NIV verse count ${nivVerseCount} exceeds the app's 250-verse budget`);
 
 // Link-builder spot checks.
 const expect = (actual: string, expected: string) => {
@@ -55,5 +77,6 @@ if (errors.length) {
 const verses = topics.reduce((n, t) => n + t.verses.length, 0);
 const objections = topics.reduce((n, t) => n + t.objections.length, 0);
 console.log(
-  `OK: ${topics.length} topics, ${categories.length} categories, ${objections} objections, ${verses} verse references.`,
+  `OK: ${topics.length} topics, ${categories.length} categories, ${objections} objections, ${verses} verse references, ` +
+    `${quotedRefs.size} quoted passages (${nivVerseCount} NIV verses).`,
 );

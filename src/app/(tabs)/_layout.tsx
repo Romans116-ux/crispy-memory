@@ -2,6 +2,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { Tabs } from 'expo-router';
 import type { ColorValue } from 'react-native';
 
+import { TranslationButton } from '../../components/TranslationButton';
 import type { IconName } from '../../components/ui';
 import { useTheme } from '../../lib/theme';
 
@@ -20,6 +21,7 @@ export default function TabLayout() {
         headerStyle: { backgroundColor: t.background },
         headerTitleStyle: { color: t.text },
         headerShadowVisible: false,
+        headerRight: () => <TranslationButton />,
       }}
     >
       <Tabs.Screen name="index" options={{ title: 'Today', tabBarIcon: tabIcon('sunny-outline') }} />

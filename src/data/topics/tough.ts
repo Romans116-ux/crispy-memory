@@ -19,7 +19,7 @@ export const toughTopics: Topic[] = [
       },
       {
         heading: 'We aren\'t in a position to judge',
-        body: 'If an infinitely wise God exists, we would expect that many of his reasons are beyond our view. Joseph could say of his brothers\' betrayal, "you meant evil against me, but God meant it for good" (Genesis 50:20), yet only years later.',
+        body: 'If an infinitely wise God exists, we would expect that many of his reasons are beyond our view. Joseph could say of his brothers\' betrayal, "You intended to harm me, but God intended it for good" (Genesis 50:20), yet only years later.',
       },
       {
         heading: 'Evil points to a standard',
@@ -47,18 +47,9 @@ export const toughTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Genesis 50:20',
-        text: 'As for you, you meant evil against me, but God meant it for good, to save many people alive, as is happening today.',
-      },
-      {
-        ref: 'Romans 8:28',
-        text: 'We know that all things work together for good for those who love God, for those who are called according to his purpose.',
-      },
-      {
-        ref: 'Revelation 21:4',
-        text: 'He will wipe away every tear from their eyes. Death will be no more; neither will there be mourning, nor crying, nor pain, any more. The first things have passed away.',
-      },
+      { ref: 'Genesis 50:20', quote: true },
+      { ref: 'Romans 8:28', quote: true },
+      { ref: 'Revelation 21:4', quote: true },
       { ref: 'Romans 8:18-22' },
       { ref: 'Job 38-42' },
     ],
@@ -112,18 +103,9 @@ export const toughTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 3:16',
-        text: 'For God so loved the world, that he gave his one and only Son, that whoever believes in him should not perish, but have eternal life.',
-      },
-      {
-        ref: '2 Peter 3:9',
-        text: 'The Lord is not slow concerning his promise, as some count slowness; but he is patient with us, not wishing that anyone should perish, but that all should come to repentance.',
-      },
-      {
-        ref: 'Romans 5:8',
-        text: 'But God commends his own love toward us, in that while we were yet sinners, Christ died for us.',
-      },
+      { ref: 'John 3:16', quote: true },
+      { ref: '2 Peter 3:9', quote: true },
+      { ref: 'Romans 5:8', quote: true },
       { ref: 'Ezekiel 33:11' },
       { ref: 'Genesis 18:25' },
     ],
@@ -168,14 +150,8 @@ export const toughTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'John 14:6',
-        text: 'Jesus said to him, "I am the way, the truth, and the life. No one comes to the Father, except through me."',
-      },
-      {
-        ref: 'Acts 4:12',
-        text: 'There is salvation in no one else, for there is no other name under heaven that is given among men, by which we must be saved!',
-      },
+      { ref: 'John 14:6', quote: true },
+      { ref: 'Acts 4:12', quote: true },
       { ref: 'Revelation 7:9' },
       { ref: '1 Timothy 2:5-6' },
     ],
@@ -225,15 +201,9 @@ export const toughTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Psalm 19:1',
-        text: 'The heavens declare the glory of God. The expanse shows his handiwork.',
-      },
+      { ref: 'Psalm 19:1', quote: true },
       { ref: 'Proverbs 25:2' },
-      {
-        ref: 'Romans 1:20',
-        text: 'For the invisible things of him since the creation of the world are clearly seen, being perceived through the things that are made, even his everlasting power and divinity, that they may be without excuse.',
-      },
+      { ref: 'Romans 1:20', quote: true },
     ],
     searchTerms: 'science and Christianity conflict',
     keyPassage: 'Psalm 104',
@@ -276,7 +246,7 @@ export const toughTopics: Topic[] = [
       {
         objection: 'The God of the Old Testament is different from Jesus.',
         response:
-          'The Old Testament repeatedly describes God as "merciful and gracious, slow to anger, and abundant in loving kindness" (Exodus 34:6), and Jesus spoke of judgment more than anyone. The same God shows both justice and mercy in both testaments, and they meet at the cross.',
+          'The Old Testament repeatedly describes God as "compassionate and gracious God, slow to anger, abounding in love and faithfulness" (Exodus 34:6), and Jesus spoke of judgment more than anyone. The same God shows both justice and mercy in both testaments, and they meet at the cross.',
       },
     ],
     verses: [

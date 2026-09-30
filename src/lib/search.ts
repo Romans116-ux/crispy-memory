@@ -1,3 +1,4 @@
+import { NIV } from '../data/bible/niv';
 import { topics } from '../data/topics';
 import type { Topic } from '../data/types';
 
@@ -42,7 +43,7 @@ export function searchTopics(query: string, pool: Topic[] = topics): SearchResul
       [topic.overview.join(' '), 1],
       [topic.points.map((p) => `${p.heading} ${p.body}`).join(' '), 1],
       [topic.objections.map((o) => `${o.objection} ${o.response}`).join(' '), 2],
-      [topic.verses.map((v) => `${v.ref} ${v.text ?? ''}`).join(' '), 2],
+      [topic.verses.map((v) => `${v.ref} ${v.quote ? (NIV[v.ref] ?? '') : ''}`).join(' '), 2],
     ];
 
     let score = 0;

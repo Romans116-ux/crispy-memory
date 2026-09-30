@@ -1,6 +1,7 @@
 import Constants from 'expo-constants';
 
 import { Body, Card, Heading, Screen, SectionTitle } from '../components/ui';
+import { NIV_COPYRIGHT } from '../data/bible/translations';
 
 export default function AboutScreen() {
   return (
@@ -16,8 +17,12 @@ export default function AboutScreen() {
       <SectionTitle>Scripture</SectionTitle>
       <Card>
         <Body>
-          Quoted verses are from the World English Bible (WEB), which is in the public domain. Tap any verse to read
-          it in context and in other translations on Bible Gateway.
+          Verses are quoted from the New International Version by default. You can switch to the King James Version
+          or World English Bible (both public domain), or choose another translation to read on Bible Gateway. Tap any
+          verse to read it in context.
+        </Body>
+        <Body muted style={{ fontSize: 13, lineHeight: 19 }}>
+          {NIV_COPYRIGHT}
         </Body>
       </Card>
 

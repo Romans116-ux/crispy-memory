@@ -48,15 +48,9 @@ export const godTopics: Topic[] = [
       },
     ],
     verses: [
-      { ref: 'Genesis 1:1', text: 'In the beginning, God created the heavens and the earth.' },
-      {
-        ref: 'Hebrews 11:3',
-        text: 'By faith we understand that the universe has been framed by the word of God, so that what is seen has not been made out of things which are visible.',
-      },
-      {
-        ref: 'Romans 1:20',
-        text: 'For the invisible things of him since the creation of the world are clearly seen, being perceived through the things that are made, even his everlasting power and divinity, that they may be without excuse.',
-      },
+      { ref: 'Genesis 1:1', quote: true },
+      { ref: 'Hebrews 11:3', quote: true },
+      { ref: 'Romans 1:20', quote: true },
       { ref: 'Psalm 90:2' },
     ],
     searchTerms: 'kalam cosmological argument universe beginning',
@@ -105,16 +99,10 @@ export const godTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Psalm 19:1',
-        text: 'The heavens declare the glory of God. The expanse shows his handiwork.',
-      },
+      { ref: 'Psalm 19:1', quote: true },
       { ref: 'Isaiah 45:18' },
       { ref: 'Jeremiah 33:25' },
-      {
-        ref: 'Colossians 1:17',
-        text: 'He is before all things, and in him all things are held together.',
-      },
+      { ref: 'Colossians 1:17', quote: true },
     ],
     searchTerms: 'fine tuning universe design argument',
     keyPassage: 'Psalm 19',
@@ -162,10 +150,7 @@ export const godTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Romans 2:14-15',
-        text: '(for when Gentiles who don\'t have the law do by nature the things of the law, these, not having the law, are a law to themselves, in that they show the work of the law written in their hearts, their conscience testifying with them, and their thoughts among themselves accusing or else excusing them)',
-      },
+      { ref: 'Romans 2:14-15', quote: true },
       { ref: 'Micah 6:8' },
       { ref: 'Psalm 145:17' },
     ],
@@ -206,10 +191,7 @@ export const godTopics: Topic[] = [
       },
     ],
     verses: [
-      {
-        ref: 'Psalm 90:2',
-        text: 'Before the mountains were brought forth, before you had formed the earth and the world, even from everlasting to everlasting, you are God.',
-      },
+      { ref: 'Psalm 90:2', quote: true },
       { ref: 'Exodus 3:14' },
       { ref: 'Revelation 1:8' },
     ],

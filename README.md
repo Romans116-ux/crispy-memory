@@ -2,7 +2,7 @@
 
 A Christian apologetics app for iPhone and iPad (and Android), built with Expo and React Native.
 
-> "Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you, with humility and fear." — 1 Peter 3:15 (WEB)
+> "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect." — 1 Peter 3:15 (NIV)
 
 ## Features
 
@@ -12,8 +12,9 @@ A Christian apologetics app for iPhone and iPad (and Android), built with Expo a
   [Got Questions](https://www.gotquestions.org), [CARM](https://carm.org), [Precept Austin](https://www.preceptaustin.org),
   [Enduring Word](https://enduringword.com), [Wesley Huff](https://www.wesleyhuff.com),
   [Bible Gateway](https://www.biblegateway.com) and [Logos](https://www.logos.com)
+- **Scripture quoted in the NIV** by default; readers can switch to the KJV or WEB, or pick ESV, NKJV, NASB, CSB, NLT, NET or AMP to read on Bible Gateway. The choice is remembered and applies to every verse link
 - **Today** tab with a question and verse of the day
-- **Scripture** tab: look up any passage in 8 translations on Bible Gateway, with one-tap Enduring Word commentary and Precept Austin word studies
+- **Scripture** tab: look up any passage in 10 translations on Bible Gateway, with one-tap Enduring Word commentary and Precept Austin word studies
 - Full-text **search** across questions, objections and verses
 - **Bookmarks** stored on-device
 - Light and dark mode, no accounts, no tracking
@@ -44,6 +45,7 @@ npm start            # scan the QR code with Expo Go, or press i for the iOS sim
 npm run web          # run in a browser
 npm run typecheck
 npm run validate     # checks every topic is complete and every link can be built
+npm run build:scripture  # regenerates KJV/WEB text after you quote a new verse
 ```
 
 ## Shipping to the App Store
@@ -52,4 +54,4 @@ See **[APP_STORE.md](./APP_STORE.md)** for the full checklist: EAS cloud build (
 
 ## Adding content
 
-Add a `Topic` object to the relevant file in `src/data/topics/`. Write summaries in your own words and link out to the resource sites rather than copying their articles. Quote Scripture only from the public-domain World English Bible; omit `text` on a verse to show just a "Read on Bible Gateway" link. Run `npm run validate` afterwards.
+Add a `Topic` object to the relevant file in `src/data/topics/`. Write summaries in your own words and link out to the resource sites rather than copying their articles. To quote a verse in the app, set `quote: true` on it, add its NIV text to `src/data/bible/niv.ts`, and run `npm run build:scripture` to generate the KJV and WEB text. Leave `quote` off to show only a link to the passage. Run `npm run validate` afterwards.
