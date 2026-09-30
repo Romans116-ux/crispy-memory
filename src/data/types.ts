@@ -3,6 +3,10 @@ export type CategoryId =
   | 'bible'
   | 'jesus'
   | 'tough'
+  | 'islam'
+  | 'atheism'
+  | 'buddhism'
+  | 'jw'
   | 'worldviews'
   | 'foundations';
 

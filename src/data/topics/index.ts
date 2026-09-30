@@ -1,7 +1,11 @@
 import type { CategoryId, Topic } from '../types';
+import { atheismTopics } from './atheism';
 import { bibleTopics } from './bible';
+import { buddhismTopics } from './buddhism';
 import { foundationsTopics } from './foundations';
 import { godTopics } from './god';
+import { islamTopics } from './islam';
+import { jwTopics } from './jehovahs-witnesses';
 import { jesusTopics } from './jesus';
 import { toughTopics } from './tough';
 import { worldviewTopics } from './worldviews';
@@ -12,6 +16,10 @@ export const topics: Topic[] = [
   ...bibleTopics,
   ...jesusTopics,
   ...toughTopics,
+  ...islamTopics,
+  ...atheismTopics,
+  ...buddhismTopics,
+  ...jwTopics,
   ...worldviewTopics,
 ];
 

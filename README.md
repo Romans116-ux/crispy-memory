@@ -6,7 +6,7 @@ A Christian apologetics app for iPhone and iPad (and Android), built with Expo a
 
 ## Features
 
-- **26 apologetics topics** in six categories: Foundations, Does God Exist?, The Bible, Jesus Christ, Tough Questions and Other Worldviews
+- **41 apologetics topics** in ten categories: Foundations, Does God Exist?, The Bible, Jesus Christ, Tough Questions, Islam, Atheism & Skepticism, Buddhism, Jehovah's Witnesses, and Truth and Doctrine
 - Each topic has a **short answer**, **key points**, **common objections with responses**, **Scripture** and **recommended reading**
 - **Go deeper** links on every topic to the partner resources:
   [Got Questions](https://www.gotquestions.org), [CARM](https://carm.org), [Precept Austin](https://www.preceptaustin.org),

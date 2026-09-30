@@ -51,7 +51,11 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 > • Can we trust the Bible? Manuscripts, the canon, archaeology and fulfilled prophecy
 > • Who is Jesus? The historical Jesus, his claims to deity and the evidence for the resurrection
 > • Tough questions: evil and suffering, hell, science and faith, and whether Jesus is the only way
-> • Other worldviews: talking with atheists, Muslims and Jehovah's Witnesses, and understanding the Trinity
+> • Islam: the crucifixion, whether the Bible was corrupted, Jesus as the Son of God, and assurance of salvation
+> • Atheism: miracles, science and knowledge, the mind, and religion and violence
+> • Buddhism: karma and grace, the self, and how the Buddha's path compares with Jesus
+> • Jehovah's Witnesses: the deity of Christ, the Holy Spirit, the bodily resurrection, the 144,000 and the Watchtower's predictions
+> • Truth and doctrine: relativism and the Trinity
 >
 > EVERY TOPIC INCLUDES
 > • A short answer you can give in conversation
@@ -77,7 +81,7 @@ App Store Connect requires 6.9" iPhone screenshots (1320 × 2868 or 1290 × 2796
 
 ## 5. Review notes (paste into "Notes for reviewer")
 
-> Salt and Grace is a reference app of original Christian apologetics content (26 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
+> Salt and Grace is a reference app of original Christian apologetics content (41 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
 
 ## Content guidelines
 
