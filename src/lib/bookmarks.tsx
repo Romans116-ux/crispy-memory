@@ -2,7 +2,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { createContext, useCallback, useContext, useEffect, useMemo, useState } from 'react';
 import type { ReactNode } from 'react';
 
-const STORAGE_KEY = 'reason-for-hope/bookmarks/v1';
+const STORAGE_KEY = 'salt-and-grace/bookmarks/v1';
 
 interface BookmarksValue {
   ids: string[];

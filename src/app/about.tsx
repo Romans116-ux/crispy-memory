@@ -6,10 +6,10 @@ import { NIV_COPYRIGHT } from '../data/bible/translations';
 export default function AboutScreen() {
   return (
     <Screen>
-      <Heading>Reason for Hope</Heading>
+      <Heading>Salt and Grace</Heading>
       <Body muted>Version {Constants.expoConfig?.version ?? '1.0.0'}</Body>
       <Body>
-        Reason for Hope helps Christians understand and share the reasons for their faith, and helps seekers explore
+        Salt and Grace helps Christians understand and share the reasons for their faith, and helps seekers explore
         the evidence for Christianity. Each topic gives a short answer, key points, responses to common objections,
         Scripture, and links to trusted resources for further study.
       </Body>

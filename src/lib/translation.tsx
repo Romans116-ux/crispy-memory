@@ -4,7 +4,7 @@ import type { ReactNode } from 'react';
 
 import { DEFAULT_TRANSLATION, translationById } from '../data/bible/translations';
 
-const STORAGE_KEY = 'reason-for-hope/translation/v1';
+const STORAGE_KEY = 'salt-and-grace/translation/v1';
 
 interface TranslationValue {
   translation: string;

@@ -1,12 +1,12 @@
 # App Store Submission Guide
 
-Everything needed to take Reason for Hope from this repo to the App Store.
+Everything needed to take Salt and Grace from this repo to the App Store.
 
 ## 1. One-time setup
 
 1. Enroll in the [Apple Developer Program](https://developer.apple.com/programs/) ($99/year).
 2. Create an [Expo account](https://expo.dev/signup) and install nothing else locally — builds run in the cloud, so no Mac is required.
-3. In `app.json`, change `ios.bundleIdentifier` (currently `com.reasonforhope.app`) to an identifier you own, e.g. `com.yourministry.reasonforhope`. Do the same for `android.package`.
+3. The app ID in `app.json` is `com.saltandgrace.app` (`ios.bundleIdentifier` and `android.package`). App IDs are unique across the App Store; if Apple reports it as taken when you register it, change both to another reverse-domain ID, e.g. `com.saltandgraceministry.app`.
 4. Link the project to EAS: `npx eas-cli@latest init`
 
 ## 2. Build and submit
@@ -24,7 +24,7 @@ EAS will prompt you to sign in to your Apple account and will create the certifi
 
 | Field | Suggested value |
 | --- | --- |
-| Name | Reason for Hope |
+| Name | Salt and Grace (if taken, try "Salt and Grace: Apologetics") |
 | Subtitle (30 chars) | Christian Apologetics Guide |
 | Primary category | Reference |
 | Secondary category | Education |
@@ -42,9 +42,9 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 
 **Description:**
 
-> "Always be ready to give an answer to everyone who asks you a reason concerning the hope that is in you." — 1 Peter 3:15
+> "Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone." — Colossians 4:6
 >
-> Reason for Hope equips you to understand and share the reasons for the Christian faith — with confidence, gentleness and respect.
+> Salt and Grace equips you to understand and share the reasons for the Christian faith — with confidence, gentleness and respect.
 >
 > EXPLORE THE BIG QUESTIONS
 > • Does God exist? The beginning of the universe, fine-tuning and the moral law
@@ -77,7 +77,7 @@ App Store Connect requires 6.9" iPhone screenshots (1320 × 2868 or 1290 × 2796
 
 ## 5. Review notes (paste into "Notes for reviewer")
 
-> Reason for Hope is a reference app of original Christian apologetics content (26 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
+> Salt and Grace is a reference app of original Christian apologetics content (26 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
 
 ## Content guidelines
 

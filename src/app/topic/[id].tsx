@@ -40,7 +40,7 @@ export default function TopicScreen() {
 
   const onShare = () => {
     Share.share({
-      message: `${topic.question}\n\n${topic.shortAnswer}\n\n— Reason for Hope`,
+      message: `${topic.question}\n\n${topic.shortAnswer}\n\n— Salt and Grace`,
     }).catch(() => {});
   };
 

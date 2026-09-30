@@ -16,7 +16,7 @@ export default function ResourcesScreen() {
   return (
     <Screen>
       <Body muted>
-        Trusted ministries and tools for going deeper. Links open in an in-app browser. Reason for Hope is not
+        Trusted ministries and tools for going deeper. Links open in an in-app browser. Salt and Grace is not
         affiliated with these organizations.
       </Body>
 

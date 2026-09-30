@@ -1,8 +1,8 @@
-# Privacy Policy — Reason for Hope
+# Privacy Policy — Salt and Grace
 
 _Last updated: September 30, 2026_
 
-Reason for Hope does not collect, transmit, sell or share any personal information.
+Salt and Grace does not collect, transmit, sell or share any personal information.
 
 - **No accounts.** The app does not require sign-up or login.
 - **No analytics or tracking.** The app contains no analytics, advertising or tracking SDKs.

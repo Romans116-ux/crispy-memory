@@ -1,8 +1,8 @@
-# Reason for Hope
+# Salt and Grace
 
 A Christian apologetics app for iPhone and iPad (and Android), built with Expo and React Native.
 
-> "Always be prepared to give an answer to everyone who asks you to give the reason for the hope that you have. But do this with gentleness and respect." — 1 Peter 3:15 (NIV)
+> "Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone." — Colossians 4:6 (NIV)
 
 ## Features
 

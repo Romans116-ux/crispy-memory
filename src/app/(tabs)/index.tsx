@@ -17,8 +17,8 @@ export default function TodayScreen() {
   return (
     <Screen>
       <View style={{ gap: spacing.xs, marginBottom: spacing.sm }}>
-        <Heading size={30}>Reason for Hope</Heading>
-        <Body muted>Always be ready to give an answer for the hope that is in you.</Body>
+        <Heading size={30}>Salt and Grace</Heading>
+        <Body muted>Let your conversation be always full of grace, seasoned with salt, so that you may know how to answer everyone. (Colossians 4:6)</Body>
       </View>
 
       <SectionTitle>Question of the day</SectionTitle>
