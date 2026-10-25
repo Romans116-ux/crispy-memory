@@ -51,6 +51,12 @@
     ],
     "experiments": {
       "typedRoutes": false
+    },
+    "owner": "romans_116",
+    "extra": {
+      "eas": {
+        "projectId": "c22d6c82-1d03-4ae4-8425-196337e4f347"
+      }
     }
   }
 }
