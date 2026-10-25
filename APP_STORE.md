@@ -31,8 +31,8 @@ EAS will prompt you to sign in to your Apple account and will create the certifi
 | Age rating | 4+ (no objectionable content) |
 | Price | Free |
 | Privacy "nutrition label" | **Data Not Collected** |
-| Privacy policy URL | Host `PRIVACY.md` (e.g. GitHub Pages or your ministry site) |
-| Support URL | Your ministry or contact page |
+| Privacy policy URL | `https://romans116-ux.github.io/crispy-memory/privacy.html` (see "Hosting the website" below) |
+| Support URL | `https://romans116-ux.github.io/crispy-memory/` |
 
 **Keywords (100 chars):**
 `apologetics,bible,christian,faith,jesus,resurrection,god,theology,evidence,scripture,gospel,defend`
@@ -74,6 +74,12 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 > • Full dark mode support
 >
 > No ads. No accounts. No tracking.
+
+## Hosting the website
+
+The support page and privacy policy live in `docs/` (`index.html` and `privacy.html`). Before publishing, replace `YOUR-EMAIL@EXAMPLE.COM` in both files with your contact address.
+
+To serve them with GitHub Pages: in the repository on GitHub, open **Settings → Pages**, set **Source** to "Deploy from a branch", choose branch `main` and folder `/docs`, and save. GitHub Pages requires the repository to be public, or a GitHub Pro plan for a private repository. The site appears at `https://romans116-ux.github.io/crispy-memory/` within a few minutes.
 
 ## 4. Screenshots
 
