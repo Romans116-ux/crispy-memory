@@ -77,7 +77,7 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 
 ## Hosting the website
 
-The support page and privacy policy live in `docs/` (`index.html` and `privacy.html`). Before publishing, replace `YOUR-EMAIL@EXAMPLE.COM` in both files with your contact address.
+The support page and privacy policy live in `docs/` (`index.html` and `privacy.html`). The contact email shown on both pages is gag00lts@gmail.com.
 
 To serve them with GitHub Pages: in the repository on GitHub, open **Settings → Pages**, set **Source** to "Deploy from a branch", choose branch `main` and folder `/docs`, and save. GitHub Pages requires the repository to be public, or a GitHub Pro plan for a private repository. The site appears at `https://romans116-ux.github.io/crispy-memory/` within a few minutes.
 
