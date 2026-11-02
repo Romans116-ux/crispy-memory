@@ -46,7 +46,12 @@ npm run web          # run in a browser
 npm run typecheck
 npm run validate     # checks every topic is complete and every link can be built
 npm run build:scripture  # regenerates KJV/WEB text after you quote a new verse
+npm run export:pages     # rebuilds the web preview in docs/app (GitHub Pages)
 ```
+
+## Web preview
+
+A browser version is published with the support site at https://romans116-ux.github.io/crispy-memory/app/. After changing the app, run `npm run export:pages` and push to `main` to update it.
 
 ## Shipping to the App Store
 

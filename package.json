@@ -36,7 +36,8 @@
     "typecheck": "tsc --noEmit && tsc --noEmit -p scripts",
     "validate": "tsx scripts/validate-content.ts",
     "export:web": "expo export --platform web",
-    "build:scripture": "tsx scripts/build-scripture.ts"
+    "build:scripture": "tsx scripts/build-scripture.ts",
+    "export:pages": "rm -rf docs/app && WEB_BASE_URL=/crispy-memory/app expo export --platform web --output-dir docs/app && cp docs/app/index.html docs/404.html && touch docs/.nojekyll"
   },
   "private": true
 }
