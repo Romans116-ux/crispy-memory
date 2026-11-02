@@ -12,6 +12,7 @@ import { categoryById } from '../../data/categories';
 import { resources } from '../../data/resources';
 import { topicById } from '../../data/topics';
 import { useBookmarks } from '../../lib/bookmarks';
+import { quoted } from '../../lib/quotes';
 import { bibleGatewayUrl, enduringWordUrl, openUrl, resourceSearchUrl } from '../../lib/links';
 import { radius, serif, spacing, useTheme } from '../../lib/theme';
 import { useTranslation } from '../../lib/translation';
@@ -68,7 +69,7 @@ export default function TopicScreen() {
       />
 
       <Heading size={28}>{topic.title}</Heading>
-      <Text style={[styles.question, { color: t.textMuted }]}>“{topic.question}”</Text>
+      <Text style={[styles.question, { color: t.textMuted }]}>{quoted(topic.question)}</Text>
 
       <View style={[styles.answer, { backgroundColor: t.accentSoft, borderColor: t.accent }]}>
         <Text style={[styles.answerLabel, { color: t.primary }]}>THE SHORT ANSWER</Text>

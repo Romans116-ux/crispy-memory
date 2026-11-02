@@ -3,6 +3,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 import type { Verse } from '../data/types';
 import { bibleGatewayUrl, openUrl } from '../lib/links';
+import { quoted as quote } from '../lib/quotes';
 import { verseText } from '../lib/scripture';
 import { radius, serif, spacing, useTheme } from '../lib/theme';
 import { useTranslation } from '../lib/translation';
@@ -24,7 +25,7 @@ export function VerseCard({ verse }: { verse: Verse }) {
         pressed && { opacity: 0.75 },
       ]}
     >
-      {quoted ? <Text style={[styles.text, { color: t.text }]}>“{quoted.text}”</Text> : null}
+      {quoted ? <Text style={[styles.text, { color: t.text }]}>{quote(quoted.text)}</Text> : null}
       <View style={styles.footer}>
         <Text style={[styles.ref, { color: t.primary }]}>
           {verse.ref}

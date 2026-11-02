@@ -2,6 +2,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
 import { useState } from 'react';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
+import { quoted } from '../lib/quotes';
 import { radius, spacing, useTheme } from '../lib/theme';
 
 export function Expandable({ title, body }: { title: string; body: string }) {
@@ -15,7 +16,7 @@ export function Expandable({ title, body }: { title: string; body: string }) {
         accessibilityState={{ expanded: open }}
         style={styles.header}
       >
-        <Text style={[styles.title, { color: t.text }]}>“{title}”</Text>
+        <Text style={[styles.title, { color: t.text }]}>{quoted(title)}</Text>
         <Ionicons name={open ? 'chevron-up' : 'chevron-down'} size={18} color={t.textMuted} />
       </Pressable>
       {open ? (
