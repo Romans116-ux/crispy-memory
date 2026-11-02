@@ -166,7 +166,15 @@ export function Chip({ label, selected, onPress }: { label: string; selected: bo
 }
 
 const styles = StyleSheet.create({
-  screenContent: { padding: spacing.lg, paddingBottom: spacing.xxl * 2, gap: spacing.md },
+  // Capped and centered so lines stay readable on iPad; phones are narrower than the cap.
+  screenContent: {
+    padding: spacing.lg,
+    paddingBottom: spacing.xxl * 2,
+    gap: spacing.md,
+    width: '100%',
+    maxWidth: 720,
+    alignSelf: 'center',
+  },
   card: { borderRadius: radius.md, borderWidth: StyleSheet.hairlineWidth, padding: spacing.lg, gap: spacing.sm },
   sectionTitle: {
     fontSize: 13,
