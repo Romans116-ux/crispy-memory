@@ -85,9 +85,36 @@ To serve them with GitHub Pages: in the repository on GitHub, open **Settings �
 
 App Store Connect requires 6.9" iPhone screenshots (1320 × 2868 or 1290 × 2796). The easiest route is running a preview build in the iOS Simulator (`eas build --profile development`) and pressing ⌘S. Good screens to capture: Today, a topic (e.g. The Resurrection), Common objections expanded, Scripture lookup, Resources.
 
-## 5. Review notes (paste into "Notes for reviewer")
+## 5. Review notes (App Review Information → Notes)
 
-> Salt and Grace is a reference app of original Christian apologetics content (41 topics, with key points, objections and responses). Scripture is quoted from the NIV (under Biblica's standard quotation permission, with the required notice in the About screen) and optionally the public-domain KJV or WEB. External links open third-party resources (Bible Gateway, Got Questions, etc.) in an in-app Safari view for further study; the app is not affiliated with these sites. No login is required and no data is collected.
+Apple's first review (Guideline 2.1, Information Needed) asked for a screen recording plus answers to five questions. Attach a screen recording made on a physical iPhone running the latest iOS, starting from launching the app, and paste these notes:
+
+```
+1. SCREEN RECORDING
+Attached. Recorded on a physical iPhone running the latest iOS, starting from app launch.
+
+2. PURPOSE AND AUDIENCE
+Salt and Grace is a free Christian apologetics reference app. It helps Christians understand and explain the reasons for their faith, and helps seekers explore the evidence for Christianity. It answers common questions people ask about God, the Bible, Jesus, and other worldviews (atheism, Islam, Buddhism, Jehovah's Witnesses). Each of its 41 original topics gives a short answer, key points, common objections with responses, related Scripture, and recommended reading. Audience: church members, students, small-group leaders, and anyone curious about Christianity.
+
+3. HOW TO USE THE MAIN FEATURES
+No account, login, setup, or sample files are needed. All content is built into the app and available immediately on launch.
+- Today: question and verse of the day.
+- Topics: browse 10 categories or search; open a topic and tap an objection to see the response.
+- Translation button (top right, "NIV"): switch quoted verses between NIV, KJV and WEB; other translations open on Bible Gateway.
+- Bookmark icon on a topic: saves it to the Saved tab (stored on device only).
+- Scripture: enter a reference (e.g. John 3:16) to read it on Bible Gateway or open Enduring Word commentary.
+- Resources: links to trusted Bible study websites.
+The app has no user accounts, no user-generated content, and no paid content or in-app purchases.
+
+4. EXTERNAL SERVICES
+The app uses no backend, authentication, payment, analytics, advertising, or AI services. Its core content is bundled in the app. It only opens public websites in Safari View Controller when the user taps a link: Bible Gateway, Got Questions, CARM, Precept Austin, Enduring Word, Wesley Huff, Logos, and DuckDuckGo site searches.
+
+5. REGIONAL DIFFERENCES
+None. The app functions identically in all regions. Content is in English.
+
+6. THIRD-PARTY MATERIAL
+All topic text is original. Bible verses are quoted from the New International Version (80 verses) under Biblica's standard permission, which allows quoting up to 500 verses without written permission when the copyright notice is shown; the notice appears in the app's About screen. KJV and World English Bible texts are in the public domain. Third-party websites are linked, not reproduced, and the app is not affiliated with them.
+```
 
 ## Content guidelines
 
