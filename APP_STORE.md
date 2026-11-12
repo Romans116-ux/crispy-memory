@@ -55,6 +55,7 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 > • Atheism: miracles, science and knowledge, the mind, and religion and violence
 > • Buddhism: karma and grace, the self, and how the Buddha's path compares with Jesus
 > • Jehovah's Witnesses: the deity of Christ, the Holy Spirit, the bodily resurrection, the 144,000 and the Watchtower's predictions
+> • Latter-day Saints: the nature of God, the Book of Mormon, the "Great Apostasy", grace and works, and Joseph Smith
 > • Truth and doctrine: relativism and the Trinity
 >
 > EVERY TOPIC INCLUDES
@@ -70,6 +71,7 @@ Always be ready to give an answer. Clear, Scripture-grounded responses to life's
 > ALSO INCLUDES
 > • A question and verse of the day
 > • Passage lookup with commentary in one tap
+> • A private journal for notes, questions and prayers, linked to the topics you study
 > • Bookmarks for quick review before a conversation
 > • Full dark mode support
 >
@@ -94,17 +96,18 @@ Apple's first review (Guideline 2.1, Information Needed) asked for a screen reco
 Attached. Recorded on a physical iPhone running the latest iOS, starting from app launch.
 
 2. PURPOSE AND AUDIENCE
-Salt and Grace is a free Christian apologetics reference app. It helps Christians understand and explain the reasons for their faith, and helps seekers explore the evidence for Christianity. It answers common questions people ask about God, the Bible, Jesus, and other worldviews (atheism, Islam, Buddhism, Jehovah's Witnesses). Each of its 41 original topics gives a short answer, key points, common objections with responses, related Scripture, and recommended reading. Audience: church members, students, small-group leaders, and anyone curious about Christianity.
+Salt and Grace is a free Christian apologetics reference app. It helps Christians understand and explain the reasons for their faith, and helps seekers explore the evidence for Christianity. It answers common questions people ask about God, the Bible, Jesus, and other worldviews (atheism, Islam, Buddhism, Jehovah's Witnesses, Latter-day Saints). Each of its 47 original topics gives a short answer, key points, common objections with responses, related Scripture, and recommended reading. Audience: church members, students, small-group leaders, and anyone curious about Christianity.
 
 3. HOW TO USE THE MAIN FEATURES
 No account, login, setup, or sample files are needed. All content is built into the app and available immediately on launch.
 - Today: question and verse of the day.
 - Topics: browse 10 categories or search; open a topic and tap an objection to see the response.
 - Translation button (top right, "NIV"): switch quoted verses between NIV, KJV and WEB; other translations open on Bible Gateway.
-- Bookmark icon on a topic: saves it to the Saved tab (stored on device only).
+- Bookmark icon on a topic: saves it to the Journal tab's Saved section.
+- Journal: write private notes; "Add a note" on any topic creates a note linked to it. Notes are stored only on the device, are never uploaded or shown to other users, and can be shared only by the user via the share sheet.
 - Scripture: enter a reference (e.g. John 3:16) to read it on Bible Gateway or open Enduring Word commentary.
 - Resources: links to trusted Bible study websites.
-The app has no user accounts, no user-generated content, and no paid content or in-app purchases.
+The app has no user accounts, no content shared between users, and no paid content or in-app purchases.
 
 4. EXTERNAL SERVICES
 The app uses no backend, authentication, payment, analytics, advertising, or AI services. Its core content is bundled in the app. It only opens public websites in Safari View Controller when the user taps a link: Bible Gateway, Got Questions, CARM, Precept Austin, Enduring Word, Wesley Huff, Logos, and DuckDuckGo site searches.
@@ -113,7 +116,7 @@ The app uses no backend, authentication, payment, analytics, advertising, or AI 
 None. The app functions identically in all regions. Content is in English.
 
 6. THIRD-PARTY MATERIAL
-All topic text is original. Bible verses are quoted from the New International Version (80 verses) under Biblica's standard permission, which allows quoting up to 500 verses without written permission when the copyright notice is shown; the notice appears in the app's About screen. KJV and World English Bible texts are in the public domain. Third-party websites are linked, not reproduced, and the app is not affiliated with them.
+All topic text is original. Bible verses are quoted from the New International Version (93 verses) under Biblica's standard permission, which allows quoting up to 500 verses without written permission when the copyright notice is shown; the notice appears in the app's About screen. KJV and World English Bible texts are in the public domain. Third-party websites are linked, not reproduced, and the app is not affiliated with them.
 ```
 
 ## Content guidelines

@@ -56,6 +56,12 @@ export const categories: Category[] = [
     icon: 'people-outline',
   },
   {
+    id: 'lds',
+    title: 'Latter-day Saints',
+    subtitle: 'Mormonism, the Book of Mormon and the biblical gospel',
+    icon: 'business-outline',
+  },
+  {
     id: 'worldviews',
     title: 'Truth and Doctrine',
     subtitle: 'Relativism, the Trinity and core Christian beliefs',

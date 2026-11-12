@@ -33,7 +33,7 @@ export default function TabLayout() {
       <Tabs.Screen name="index" options={{ title: 'Today', tabBarIcon: tabIcon('sunny-outline') }} />
       <Tabs.Screen name="topics" options={{ title: 'Topics', tabBarIcon: tabIcon('albums-outline') }} />
       <Tabs.Screen name="scripture" options={{ title: 'Scripture', tabBarIcon: tabIcon('book-outline') }} />
-      <Tabs.Screen name="saved" options={{ title: 'Saved', tabBarIcon: tabIcon('bookmark-outline') }} />
+      <Tabs.Screen name="journal" options={{ title: 'Journal', tabBarIcon: tabIcon('journal-outline') }} />
       <Tabs.Screen name="resources" options={{ title: 'Resources', tabBarIcon: tabIcon('library-outline') }} />
     </Tabs>
   );

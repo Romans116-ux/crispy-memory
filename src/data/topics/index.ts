@@ -6,6 +6,7 @@ import { foundationsTopics } from './foundations';
 import { godTopics } from './god';
 import { islamTopics } from './islam';
 import { jwTopics } from './jehovahs-witnesses';
+import { ldsTopics } from './latter-day-saints';
 import { jesusTopics } from './jesus';
 import { toughTopics } from './tough';
 import { worldviewTopics } from './worldviews';
@@ -20,6 +21,7 @@ export const topics: Topic[] = [
   ...atheismTopics,
   ...buddhismTopics,
   ...jwTopics,
+  ...ldsTopics,
   ...worldviewTopics,
 ];
 

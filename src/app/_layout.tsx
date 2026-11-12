@@ -2,6 +2,7 @@ import { Stack } from 'expo-router';
 import { StatusBar } from 'expo-status-bar';
 
 import { BookmarksProvider } from '../lib/bookmarks';
+import { NotesProvider } from '../lib/notes';
 import { useTheme } from '../lib/theme';
 import { TranslationProvider } from '../lib/translation';
 
@@ -10,6 +11,7 @@ export default function RootLayout() {
   return (
     <TranslationProvider>
     <BookmarksProvider>
+    <NotesProvider>
       <StatusBar style={t.dark ? 'light' : 'dark'} />
       <Stack
         screenOptions={{
@@ -24,9 +26,11 @@ export default function RootLayout() {
         <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
         <Stack.Screen name="topic/[id]" options={{ title: '' }} />
         <Stack.Screen name="category/[id]" options={{ title: '' }} />
+        <Stack.Screen name="note/[id]" options={{ title: 'Note' }} />
         <Stack.Screen name="about" options={{ title: 'About', presentation: 'modal' }} />
         <Stack.Screen name="translation" options={{ title: 'Bible Translation', presentation: 'modal' }} />
       </Stack>
+    </NotesProvider>
     </BookmarksProvider>
     </TranslationProvider>
   );

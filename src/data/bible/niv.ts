@@ -7,6 +7,8 @@ export const NIV: Record<string, string> = {
   '1 Corinthians 15:17': 'And if Christ has not been raised, your faith is futile; you are still in your sins.',
   '1 Corinthians 15:3-8':
     'For what I received I passed on to you as of first importance: that Christ died for our sins according to the Scriptures, that he was buried, that he was raised on the third day according to the Scriptures, and that he appeared to Cephas, and then to the Twelve. After that, he appeared to more than five hundred of the brothers and sisters at the same time, most of whom are still living, though some have fallen asleep. Then he appeared to James, then to all the apostles, and last of all he appeared to me also, as to one abnormally born.',
+  '1 John 4:1':
+    'Dear friends, do not believe every spirit, but test the spirits to see whether they are from God, because many false prophets have gone out into the world.',
   '1 John 5:13':
     'I write these things to you who believe in the name of the Son of God so that you may know that you have eternal life.',
   '1 Peter 3:15':
@@ -37,6 +39,8 @@ export const NIV: Record<string, string> = {
   'Deuteronomy 6:4': 'Hear, O Israel: The LORD our God, the LORD is one.',
   'Ephesians 2:8-9':
     'For it is by grace you have been saved, through faith—and this is not from yourselves, it is the gift of God—not by works, so that no one can boast.',
+  'Ephesians 3:21':
+    'to him be glory in the church and in Christ Jesus throughout all generations, for ever and ever! Amen.',
   'Ephesians 4:30': 'And do not grieve the Holy Spirit of God, with whom you were sealed for the day of redemption.',
   'Galatians 1:8':
     'But even if we or an angel from heaven should preach a gospel other than the one we preached to you, let them be under God’s curse!',
@@ -48,10 +52,14 @@ export const NIV: Record<string, string> = {
     'You intended to harm me, but God intended it for good to accomplish what is now being done, the saving of many lives.',
   'Hebrews 11:3':
     'By faith we understand that the universe was formed at God’s command, so that what is seen was not made out of what was visible.',
+  'Hebrews 1:1-2':
+    'In the past God spoke to our ancestors through the prophets at many times and in various ways, but in these last days he has spoken to us by his Son, whom he appointed heir of all things, and through whom also he made the universe.',
   'Hebrews 9:27': 'Just as people are destined to die once, and after that to face judgment,',
   'Isaiah 1:18':
     '“Come now, let us settle the matter,” says the LORD. “Though your sins are like scarlet, they shall be as white as snow; though they are red as crimson, they shall be like wool.”',
   'Isaiah 40:8': 'The grass withers and the flowers fall, but the word of our God endures forever.',
+  'Isaiah 43:10':
+    '“You are my witnesses,” declares the LORD, “and my servant whom I have chosen, so that you may know and believe me and understand that I am he. Before me no god was formed, nor will there be one after me.”',
   'Isaiah 53:5':
     'But he was pierced for our transgressions, he was crushed for our iniquities; the punishment that brought us peace was on him, and by his wounds we are healed.',
   'Jeremiah 29:13': 'You will seek me and find me when you seek me with all your heart.',
@@ -75,13 +83,19 @@ export const NIV: Record<string, string> = {
   'John 2:19': 'Jesus answered them, “Destroy this temple, and I will raise it again in three days.”',
   'John 3:16':
     'For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life.',
+  'John 4:24': 'God is spirit, and his worshipers must worship in the Spirit and in truth.',
   'John 8:32': 'Then you will know the truth, and the truth will set you free.',
   'John 8:58': '“Very truly I tell you,” Jesus answered, “before Abraham was born, I am!”',
+  'Jude 1:3':
+    'Dear friends, although I was very eager to write to you about the salvation we share, I felt compelled to write and urge you to contend for the faith that was once for all entrusted to God’s holy people.',
   'Luke 1:37': 'For no word from God will ever fail.',
   'Luke 24:39':
     'Look at my hands and my feet. It is I myself! Touch me and see; a ghost does not have flesh and bones, as you see I have.',
+  'Malachi 3:6': '“I the LORD do not change. So you, the descendants of Jacob, are not destroyed.”',
   'Matthew 11:28': 'Come to me, all you who are weary and burdened, and I will give you rest.',
   'Matthew 16:16': 'Simon Peter answered, “You are the Messiah, the Son of the living God.”',
+  'Matthew 16:18':
+    'And I tell you that you are Peter, and on this rock I will build my church, and the gates of Hades will not overcome it.',
   'Matthew 24:35': 'Heaven and earth will pass away, but my words will never pass away.',
   'Matthew 24:36':
     'But about that day or hour no one knows, not even the angels in heaven, nor the Son, but only the Father.',
@@ -90,10 +104,13 @@ export const NIV: Record<string, string> = {
   'Matthew 28:19':
     'Therefore go and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit,',
   'Matthew 5:44': 'But I tell you, love your enemies and pray for those who persecute you,',
+  'Numbers 23:19':
+    'God is not human, that he should lie, not a human being, that he should change his mind. Does he speak and then not act? Does he promise and not fulfill?',
   'Philippians 3:20':
     'But our citizenship is in heaven. And we eagerly await a Savior from there, the Lord Jesus Christ,',
   'Proverbs 1:7': 'The fear of the LORD is the beginning of knowledge, but fools despise wisdom and instruction.',
   'Proverbs 30:5': 'Every word of God is flawless; he is a shield to those who take refuge in him.',
+  'Proverbs 30:6': 'Do not add to his words, or he will rebuke you and prove you a liar.',
   'Psalm 119:89': 'Your word, LORD, is eternal; it stands firm in the heavens.',
   'Psalm 139:14':
     'I praise you because I am fearfully and wonderfully made; your works are wonderful, I know that full well.',
@@ -110,8 +127,12 @@ export const NIV: Record<string, string> = {
     'For since the creation of the world God’s invisible qualities—his eternal power and divine nature—have been clearly seen, being understood from what has been made, so that people are without excuse.',
   'Romans 2:14-15':
     '(Indeed, when Gentiles, who do not have the law, do by nature things required by the law, they are a law for themselves, even though they do not have the law. They show that the requirements of the law are written on their hearts, their consciences also bearing witness, and their thoughts sometimes accusing them and at other times even defending them.)',
+  'Romans 4:5':
+    'However, to the one who does not work but trusts God who justifies the ungodly, their faith is credited as righteousness.',
   'Romans 5:8': 'But God demonstrates his own love for us in this: While we were still sinners, Christ died for us.',
   'Romans 6:23': 'For the wages of sin is death, but the gift of God is eternal life in Christ Jesus our Lord.',
   'Romans 8:28':
     'And we know that in all things God works for the good of those who love him, who have been called according to his purpose.',
+  'Titus 3:5':
+    'he saved us, not because of righteous things we had done, but because of his mercy. He saved us through the washing of rebirth and renewal by the Holy Spirit,',
 };

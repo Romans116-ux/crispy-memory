@@ -38,7 +38,7 @@ export default function AboutScreen() {
       <SectionTitle>Privacy</SectionTitle>
       <Card>
         <Body>
-          This app does not collect, store or share any personal data. Saved topics are stored only on your device.
+          This app does not collect or share any personal data. Your journal notes, saved topics and translation choice are stored only on your device and are never sent anywhere.
           No accounts, analytics or tracking.
         </Body>
       </Card>

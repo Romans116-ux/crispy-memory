@@ -4,7 +4,7 @@ import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { Platform, Pressable, Share, StyleSheet, Text, View } from 'react-native';
 
 import { Expandable } from '../../components/Expandable';
-import { Body, Card, Heading, Row, Screen, SectionTitle } from '../../components/ui';
+import { Body, Button, Card, Heading, Row, Screen, SectionTitle } from '../../components/ui';
 import type { IconName } from '../../components/ui';
 import { VerseCard } from '../../components/VerseCard';
 import { translationById } from '../../data/bible/translations';
@@ -12,6 +12,7 @@ import { categoryById } from '../../data/categories';
 import { resources } from '../../data/resources';
 import { topicById } from '../../data/topics';
 import { useBookmarks } from '../../lib/bookmarks';
+import { formatNoteDate, noteSnippet, useNotes } from '../../lib/notes';
 import { quoted } from '../../lib/quotes';
 import { bibleGatewayUrl, enduringWordUrl, openUrl, resourceSearchUrl } from '../../lib/links';
 import { radius, serif, spacing, useTheme } from '../../lib/theme';
@@ -23,6 +24,7 @@ export default function TopicScreen() {
   const topic = topicById[id];
   const { isSaved, toggle } = useBookmarks();
   const { translation } = useTranslation();
+  const { notes, createNote } = useNotes();
 
   if (!topic) {
     return (
@@ -120,6 +122,25 @@ export default function TopicScreen() {
       {topic.verses.map((v) => (
         <VerseCard key={v.ref} verse={v} />
       ))}
+
+      <SectionTitle>My notes</SectionTitle>
+      {notes
+        .filter((n) => n.topicId === topic.id)
+        .map((n) => (
+          <Row
+            key={n.id}
+            icon="document-text-outline"
+            title={n.title.trim() || 'Untitled note'}
+            subtitle={[noteSnippet(n), formatNoteDate(n.updatedAt)].filter(Boolean).join('\n')}
+            onPress={() => router.push(`/note/${n.id}`)}
+          />
+        ))}
+      <Button
+        title="Add a note"
+        icon="create-outline"
+        variant="secondary"
+        onPress={() => router.push(`/note/${createNote({ topicId: topic.id, title: `Notes on ${topic.title}` })}`)}
+      />
 
       <SectionTitle>Go deeper</SectionTitle>
       {topic.keyPassage ? (
