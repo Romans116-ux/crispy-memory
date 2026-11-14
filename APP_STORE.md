@@ -117,6 +117,9 @@ None. The app functions identically in all regions. Content is in English.
 
 6. THIRD-PARTY MATERIAL
 All topic text is original. Bible verses are quoted from the New International Version (93 verses) under Biblica's standard permission, which allows quoting up to 500 verses without written permission when the copyright notice is shown; the notice appears in the app's About screen. KJV and World English Bible texts are in the public domain. Third-party websites are linked, not reproduced, and the app is not affiliated with them.
+
+7. ADVERTISING
+The app contains no advertising of any kind: no ad networks or SDKs, no banner or interstitial ads, no sponsored content, and no use of the advertising identifier or tracking. Links to Bible study websites (for example Logos and Bible Gateway) are unpaid study references chosen for their content, not advertisements, and we receive nothing for them.
 ```
 
 ## Content guidelines
